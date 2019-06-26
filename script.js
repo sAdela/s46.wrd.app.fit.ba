@@ -94,11 +94,14 @@ function checkWeather(obj){
 
     body = document.getElementById("body");
     console.log(obj.weather[0].icon);
+
     if(obj.weather[0].icon === "01n" || obj.weather[0].icon === "02n" || obj.weather[0].icon === "03n" ||
     obj.weather[0].icon === "04n" || obj.weather[0].icon === "09n" || obj.weather[0].icon === "10n"
     || obj.weather[0].icon === "11n"){
+
         body.style.background = "url('./images/night.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
+
     }
     else if(obj.weather[0].main === "Clear"){
         body.style.background = "url('./images/sun.jpg') no-repeat center center fixed";
@@ -144,7 +147,7 @@ function vrijeme(){
 }
 
 function prognozaZaTriDana(){
-    var valueText = document.getElementById("city").value;
+    var valueText = $("#city").val();
     var mojUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + valueText + '&mode=json&APPID=e9fb9625dad739e3c55db01ff9cb24c8';
     getPoziv1(mojUrl);
 
@@ -170,7 +173,7 @@ function getPoziv1(mojUrl){
 
 function ispis1(obj){
     console.log(obj);
-    var sl1 = document.getElementById("first");
+    var sl1 = document.getElementById("first"); 
     var sl2 = document.getElementById("second");
     var sl3 = document.getElementById("third");
     sl1.style.display = "block";
