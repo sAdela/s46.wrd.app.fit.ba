@@ -97,31 +97,31 @@ function checkWeather(obj){
     if(obj.weather[0].icon === "01n" || obj.weather[0].icon === "02n" || obj.weather[0].icon === "03n" ||
     obj.weather[0].icon === "04n" || obj.weather[0].icon === "09n" || obj.weather[0].icon === "10n"
     || obj.weather[0].icon === "11n"){
-        body.style.background = "url('night.jpg') no-repeat center center fixed";
+        body.style.background = "url('./images/night.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
     }
     else if(obj.weather[0].main === "Clear"){
-        body.style.background = "url('sun.jpg') no-repeat center center fixed";
+        body.style.background = "url('./images/sun.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
     }
     else if(obj.weather[0].main === "Clouds"){
-        body.style.background = "url('clouds.jpg') no-repeat center center fixed";
+        body.style.background = "url('./images/clouds.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
     }
     else if(obj.weather[0].main === "Snow"){
-        body.style.background = "url('snow-covered-giants-of-nature.jpg') no-repeat center center fixed";
+        body.style.background = "url('./images/snow-covered-giants-of-nature.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
     }
     else if(obj.weather[0].main === "Rain"){
-        body.style.background = "url('rain.jpg') no-repeat center center fixed";
+        body.style.background = "url('./images/rain.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
     }
     else if(obj.weather[0].main === "Thunderstorm"){
-        body.style.background = "url('thunderstorm.jpg') no-repeat center center fixed";
+        body.style.background = "url('./images/thunderstorm.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
     }
     else if(obj.weather[0].main === "Drizzle"){
-        body.style.background = "url('drizzle.jpg') no-repeat center center fixed";
+        body.style.background = "url('./images/drizzle.jpg') no-repeat center center fixed";
         body.style.backgroundSize = "cover";
     }
     else{
