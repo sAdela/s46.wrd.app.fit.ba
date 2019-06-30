@@ -2,4 +2,5 @@
 [HTML, CSS, JS, jQuery, API] Web Progressive App 
 
 
-https://s46.wrd.app.fit.ba/
+APP:
+---------> https://s46.wrd.app.fit.ba/ <---------
