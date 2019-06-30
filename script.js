@@ -135,7 +135,7 @@ function checkWeather(obj){
 function vrijeme(){
     if(navigator.geolocation){
             navigator.geolocation.getCurrentPosition(function(position){
-               $.get( "https://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude + "," + position.coords.longitude +"&key=AIzaSyB0y4nFfkVRArjpqIl-9KVcany7sjL6aHQ", function(data) {
+               $.get( "https://maps.googleapis.com/maps/api/geocode/json?latlng="+ position.coords.latitude + "," + position.coords.longitude +"&key=PRIVATE", function(data) {
                     var city = document.getElementById("city");
                     console.log(data);
                     city.value = data.results[5].formatted_address;
