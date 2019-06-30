@@ -38,7 +38,7 @@ function getPoziv(mojUrl){
 
 function pretrazi(){
     var city = document.getElementById("city").value;
-    var mojUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=917b026a997320574cd4315b9bf4c73a';
+    var mojUrl = 'https://api.openweathermap.org/data/2.5/weather?q=' + city + '&appid=PRIVATE';
     getPoziv(mojUrl);
 
 
@@ -148,7 +148,7 @@ function vrijeme(){
 
 function prognozaZaTriDana(){
     var valueText = $("#city").val();
-    var mojUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + valueText + '&mode=json&APPID=e9fb9625dad739e3c55db01ff9cb24c8';
+    var mojUrl = 'https://api.openweathermap.org/data/2.5/forecast?q=' + valueText + '&mode=json&APPID=PRIVATE';
     getPoziv1(mojUrl);
 
 }
